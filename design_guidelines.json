@@ -1,0 +1,128 @@
+{
+  "project_name": "Gas Kras Band Website",
+  "app_type": "marketing_site",
+  "design_philosophy": {
+    "theme": "Organic & Earthy",
+    "emotional_tone": "Friendly, Authentic, Energetic, Rustic but Professional",
+    "visual_style": "Warm, Clean, Cinematic, Image-forward",
+    "core_principles": [
+      "Fusion over Imitation: Mix Folk tradition with modern minimalist web design.",
+      "Emotion First: Every interaction should feel welcoming and lively.",
+      "Content is King: High-quality imagery of instruments and band members takes center stage.",
+      "Negative Space: Generous padding to let the content breathe."
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Playfair Display, serif",
+      "body": "Manrope, sans-serif",
+      "accent": "Caveat, cursive"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-none",
+      "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-medium",
+      "body": "text-base md:text-lg leading-relaxed text-stone-600",
+      "caption": "text-sm font-medium tracking-widest uppercase text-stone-500"
+    },
+    "installation_guide": "Add these fonts via Google Fonts in index.html: <link href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Manrope:wght@400;500;700&family=Caveat:wght@400;700&display=swap' rel='stylesheet'>"
+  },
+  "colors": {
+    "palette": {
+      "background": {
+        "default": "bg-stone-50",
+        "alt": "bg-stone-100",
+        "dark": "bg-stone-900"
+      },
+      "text": {
+        "primary": "text-stone-900",
+        "secondary": "text-stone-600",
+        "inverted": "text-stone-50"
+      },
+      "brand": {
+        "primary": "bg-orange-700",
+        "primary_hover": "hover:bg-orange-800",
+        "secondary": "bg-green-800",
+        "accent": "text-orange-600"
+      },
+      "border": "border-stone-200"
+    },
+    "gradients": {
+      "hero_overlay": "bg-gradient-to-t from-stone-900/80 via-stone-900/40 to-transparent",
+      "subtle_warmth": "bg-gradient-to-br from-stone-50 to-orange-50"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "rounded-full bg-orange-700 text-white hover:bg-orange-800 transition-all duration-300 px-8 py-3 font-medium text-lg shadow-lg hover:shadow-xl hover:-translate-y-1",
+      "secondary": "rounded-full border-2 border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-white transition-all duration-300 px-8 py-3 font-medium text-lg",
+      "ghost": "text-stone-600 hover:text-orange-700 font-medium transition-colors"
+    },
+    "cards": {
+      "wrapper": "bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-stone-100",
+      "image_container": "aspect-[4/3] overflow-hidden relative",
+      "content": "p-6 md:p-8"
+    },
+    "navigation": {
+      "wrapper": "fixed top-0 w-full z-50 transition-all duration-300 backdrop-blur-md border-b border-white/10",
+      "link": "text-sm md:text-base font-medium tracking-wide hover:text-orange-600 transition-colors uppercase"
+    },
+    "inputs": {
+      "default": "rounded-lg border-stone-200 bg-stone-50 focus:ring-2 focus:ring-orange-200 focus:border-orange-500 transition-all"
+    }
+  },
+  "layout_strategies": {
+    "spacing": {
+      "section_padding": "py-20 md:py-32",
+      "container_padding": "px-6 md:px-12 lg:px-24",
+      "element_gap": "gap-8 md:gap-12"
+    },
+    "grids": {
+      "bento_gallery": "grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 auto-rows-[300px]",
+      "features": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Use subtle grain overlay on backgrounds to add 'paper' feel.",
+    "border_radius": "rounded-2xl for cards, rounded-full for buttons/badges",
+    "shadows": "shadow-sm for cards, shadow-xl for floating elements",
+    "animations": {
+      "fade_in": "animate-in fade-in slide-in-from-bottom-4 duration-700",
+      "hover_lift": "hover:-translate-y-1 transition-transform duration-300"
+    }
+  },
+  "image_urls": {
+    "hero_background": "https://images.unsplash.com/photo-1735713212111-e39b9cbcdbea?q=80&w=2070&auto=format&fit=crop",
+    "band_performance": [
+      "https://images.unsplash.com/photo-1763771891917-bd7009f4fe80?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1769812343936-fb9fc21f99c0?q=80&w=2070&auto=format&fit=crop"
+    ],
+    "instruments": [
+      "https://images.unsplash.com/photo-1772991274136-255f87f78a78?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1646489874464-19adab29d38f?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1703353312084-4e6f1ef27c58?q=80&w=2070&auto=format&fit=crop"
+    ],
+    "placeholders": {
+        "album_cover": "https://placehold.co/600x600/e7e5e4/44403c?text=Album+Cover",
+        "merch_item": "https://placehold.co/600x600/f5f5f4/1c1917?text=Merch+Item"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Use 'Playfair Display' for all Headings (H1-H3). Use 'Manrope' for body text.",
+    "Implement a smooth scroll behavior using 'lenis' or CSS 'scroll-behavior: smooth'.",
+    "Create a 'Music' section using the 'Bento' grid layout.",
+    "Use the provided image URLs for specific sections. Do NOT use placeholders unless specified.",
+    "Ensure the 'Contact' section uses Social Icons (Lucide or React Icons) and NO form.",
+    "Implement a 'Language Switcher' (SLO | ITA | ENG) in the navbar.",
+    "The site must be 'Mobile-First'. Check responsive behaviors.",
+    "Use Shadcn components for complex interactions but style them to match the 'Organic & Earthy' theme (remove default borders, add soft shadows).",
+    "Add a 'grain' texture overlay using a fixed pointer-events-none div with a noise background image if possible, or keep it clean if not."
+  ],
+  "universal_guidelines": [
+    "Do not use generic centered layouts. Use asymmetry.",
+    "Use 2-3x more spacing than typical designs (p-24 instead of p-8).",
+    "Every interaction needs micro-animations (hover, focus, active).",
+    "Use 'sonner' for toast notifications.",
+    "Ensure all interactive elements have 'data-testid' attributes."
+  ]
+}
